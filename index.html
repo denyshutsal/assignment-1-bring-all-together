@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Grocery store 'Joe'" />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <!-- Scripts -->
+    <script src="main.js" defer></script>
+    <title>Grocery store "Joe"</title>
+  </head>
+  <body>
+    <header id="main-header">
+      <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">JOE</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Basket</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Log In</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sign Up</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="p-3">
+      <div class="container">
+        <h1 class="text-center p-4">
+          Grocery store <small class="text-body-secondary">"Joe"</small>
+        </h1>
+        <div class="row d-flex flex-column">
+          <div class="col-10 align-self-center">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Monday</th>
+                  <th scope="col">Tuesday</th>
+                  <th scope="col">Wednesday</th>
+                  <th scope="col">Thursday</th>
+                  <th scope="col">Friday</th>
+                  <th scope="col">Saturday</th>
+                  <th scope="col">Sunday</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>10:00 - 20:00</td>
+                  <td>8:00 - 20:00</td>
+                  <td>8:00 - 20:00</td>
+                  <td>8:00 - 20:00</td>
+                  <td>8:00 - 20:00</td>
+                  <td colspan="2">day off</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <br />
+        <p>In our store you can find:</p>
+        <ul>
+          <li>Bread and bakery products</li>
+          <li>Milk and dairy products</li>
+          <li>Fresh chilled and frozen meat and meat products</li>
+          <li>Confectionery</li>
+          <li>Groceries</li>
+          <li>Cereals</li>
+          <li>Convenience foods</li>
+          <li>Tea, coffee and drinks</li>
+        </ul>
+        <form class="form" action="process.php" method="post">
+          <br />
+          <p>What would you like to order:</p>
+          <div>
+            <div class="form-check">
+              <label class="form-check-label" for="form-check-input"
+                >Milk
+              </label>
+              <input
+                id="form-check-input"
+                class="form-check-input checkbox"
+                type="checkbox"
+                name="milk"
+                value="milk"
+              />
+            </div>
+            <div class="form-check">
+              <label for="bread" class="form-check-label"> Bread </label>
+              <input
+                id="bread"
+                class="form-check-input checkbox"
+                type="checkbox"
+                name="bread"
+                value="bread"
+              />
+            </div>
+            <div class="form-check">
+              <label for="bakery" class="form-check-label"> Bakery </label>
+              <input
+                id="bakery"
+                class="form-check-input checkbox"
+                type="checkbox"
+                name="bakery"
+                value="bakery"
+              />
+            </div>
+            <div class="form-check">
+              <label for="dairyProducts" class="form-check-label"> Soup </label>
+              <input
+                id="dairyProducts"
+                class="form-check-input checkbox"
+                type="checkbox"
+                name="dairyProducts"
+                value="soup"
+              />
+            </div>
+            <div class="form-check">
+              <label
+                for="freshChilledFrozenMeatAndMeatProducts"
+                class="form-check-label"
+              >
+                Fresh chilled meat
+              </label>
+              <input
+                id="freshChilledFrozenMeatAndMeatProducts"
+                class="form-check-input checkbox"
+                type="checkbox"
+                name="freshChilledFrozenMeatAndMeatProducts"
+                value="fresh chilled meat"
+              />
+            </div>
+            <div class="form-check">
+              <label for="confectionery" class="form-check-label"
+                >Confectionery
+              </label>
+              <input
+                id="confectionery"
+                class="form-check-input checkbox"
+                type="checkbox"
+                name="confectionery"
+                value="confectionery"
+              />
+            </div>
+            <div class="form-check">
+              <label for="cereals" class="form-check-label"> Cereals </label>
+              <input
+                id="cereals"
+                class="form-check-input checkbox"
+                type="checkbox"
+                name="cereals"
+                value="cereals"
+              />
+            </div>
+            <div class="form-check">
+              <label for="convenienceFoods" class="form-check-label">
+                Convenience foods
+              </label>
+              <input
+                id="convenienceFoods"
+                class="form-check-input checkbox"
+                type="checkbox"
+                name="convenienceFoods"
+                value="convenience foods"
+              />
+            </div>
+            <div class="form-check">
+              <label for="teaCoffeeDrinks" class="form-check-label">
+                Tea
+              </label>
+              <input
+                id="teaCoffeeDrinks"
+                class="form-check-input checkbox"
+                type="checkbox"
+                name="teaCoffeeDrinks"
+                value="tea"
+              />
+            </div>
+            <hr />
+            <div class="form-check">
+              <label class="form-check-label" for="paymentType1"
+                >Payment in the store
+              </label>
+              <input
+                id="paymentType1"
+                class="form-check-input radio"
+                type="radio"
+                name="paymentType"
+                value="Payment in the store"
+                checked
+              />
+            </div>
+            <div class="form-check">
+              <label class="form-check-label" for="paymentType2"
+                >Upon receipt
+              </label>
+              <input
+                id="paymentType2"
+                class="form-check-input radio"
+                type="radio"
+                name="paymentType"
+                value="Upon receipt"
+              />
+            </div>
+          </div>
+          <hr />
+          <div class="row">
+            <p>Specify the day of delivery:</p>
+            <div class="col-3 align-self-start">
+              <select class="form-select" name="dayForDelivery" required>
+                <option value="">None</option>
+                <option value="Monday">Monday</option>
+                <option value="Tuesday">Tuesday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thursday</option>
+                <option value="Friday">Friday</option>
+                <option value="Saturday">Saturday</option>
+                <option value="Sunday">Sunday</option>
+              </select>
+            </div>
+            <br />
+            <br />
+            <hr />
+            <p>Order comments:</p>
+            <div class="col-6 align-self-start">
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">✍🏼</span>
+                <input
+                  class="form-control order-comments-input"
+                  type="text"
+                  name="orderComments"
+                  placeholder="Order comments"
+                />
+              </div>
+              <hr />
+              <input
+                class="btn btn-primary form-submit-btn"
+                type="submit"
+                name="submit"
+                value="Submit"
+              />
+            </div>
+          </div>
+        </form>
+        <br />
+        <div class="order-info-section d-none">
+          <h2 class="order-info-title fs-6">You ordered:</h2>
+          <ul class="order-info-list"></ul>
+          <br />
+          <h2 class="payment-type-title fs-6">Payment type:</h2>
+          <p class="payment-type-text"></p>
+          <br />
+          <h2 class="day-of-delivery-title fs-6">Day of delivery:</h2>
+          <p class="day-of-delivery-text"></p>
+          <br />
+          <h2 class="order-comments-title fs-6">Order comments:</h2>
+          <p><em class="order-comments-text"></em></p>
+        </div>
+      </div>
+    </main>
+    <br />
+    <footer id="main-footer" class="bg-dark text-white py-5">
+      <div class="container">
+        <p class="text-center">Copyright &copy; 2023, Grocery store "Joe"</p>
+        <div class="text-center">
+          <a href="#" target="_blank">Our partners</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- scripts -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
